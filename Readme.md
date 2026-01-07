@@ -12,5 +12,5 @@
      ```
 6. Finally run below command to start your application.
     ```sh
-     ddev launch (ddev-launch.png)
+     ddev launch ![ddev launch text](ddev-launch.png)
      ```
