@@ -12,5 +12,30 @@
      ```
 6. Finally run below command to start your application.
     ```sh
-     ddev launch!(/home/parzival/Pictures/Screenshots/ddev-launch.jpg)
+     ddev launch
      ```
+7. The output from the above command should look like -
+    ```sh
+    $ ddev launch
+
+    Project demo-app is not running, starting it
+    Starting demo-app... 
+    Building project images....
+    Project images built in 2s. 
+    Network ddev-demo-app_default  Created 
+    Container ddev-demo-app-web  Created 
+    Container ddev-demo-app-db  Created 
+    Container ddev-demo-app-db  Started 
+    Container ddev-demo-app-web  Started 
+    Waiting for containers to become ready: [web db] 
+    Starting ddev-router if necessary... 
+    Container ddev-router  Created 
+    Container ddev-router  Started 
+    Successfully started demo-app 
+    Your project can be reached at https://demo-app.ddev.site
+    See 'ddev describe' for alternate URLs. 
+    Opening in existing browser session.
+    ```
+8. You can check the app on your browser -
+
+![test](./pictures/output.png)
