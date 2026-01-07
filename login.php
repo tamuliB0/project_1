@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,8 +9,12 @@
     <title>login page</title>
 </head>
 <body>
+    <?php if(isset($_SESSION['error'])) {
+        echo $_SESSION['error'];
+        unset($_SESSION['error']);
+        }?>
     <h2>Login</h2>
-    <form method="POST" action="login.php">
+    <form method="POST" action="auth.php">
         <label for="username">Username:</label>
         <input type="text" name="username" required>
 
