@@ -12,5 +12,5 @@
      ```
 6. Finally run below command to start your application.
     ```sh
-     ddev launch ![ddev launch text](/home/parzival/project_1/ddev-launch.jpg)
+     ddev launch(/home/parzival/Pictures/Screenshots/ddev-launch.jpg)
      ```
