@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +9,10 @@
     <title>Register</title>
 </head>
 <body>
+     <?php if(isset($_SESSION['error'])) {
+        echo $_SESSION['error'];
+        unset($_SESSION['error']);
+        }?>
     <h1>Register</h1>
     <p>Create your account, it only takes a minute</p>
     <form action="process.php" method="POST">
