@@ -8,6 +8,6 @@ require 'questions.php';
 
 <h1>General Knowledge Quiz</h1>
 <p>Test your knowledge with <?php echo $total_question?> questions!</p><br>
-<a href="questions.php">Start Quiz</a>
+<a href="display-logic.php">Start Quiz</a>
 
 <?php include 'footer.php'; ?>
