@@ -6,7 +6,7 @@ require 'questions.php';
 if(!isset($_SESSION['current_question'])) {
     $_SESSION['current_question'] = 1;
 }
-$current = $_SESSION['current_question'];
+$current = $_SESSION['current_question'] ?? 1;
 
 if(!isset($_SESSION['answers'])) {
     $_SESSION['answers'] = [];
@@ -41,9 +41,9 @@ $current = $_SESSION['current_question'];
         <input type="radio" name="answer" value="<?php echo $choice; ?>" required>
         <?php echo $choice; ?>
     </label>
-    <?php endforeach;?>
+    <?php endforeach;?><br>
     <?php if ($current > 1): ?>
-        <button type="submit" name="action" value="previous">Previous Question</button>
+        <button type="submit" name="action" value="previous" formnovalidate>Previous Question</button>
     <?php endif; ?>
     <button type="submit" name="action" value="next"><?php echo ($current == $total_question)? "Finish Quiz":"Next Question";?></button>
 
