@@ -1,4 +1,5 @@
 <?php
+session_start();
 $page_title = "Quiz app";
 include 'header.php';
 require 'config.php';
