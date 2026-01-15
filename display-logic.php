@@ -57,20 +57,16 @@ $data = $stmt->fetch(PDO::FETCH_ASSOC);
 <form method="POST">
     <?php //foreach($data as $data):?>
     <label>
-        <input type="radio" name="answer" value="<?php echo $data['option1']; ?>" required>
-        <?php echo $data['option1']; ?>
+        <input type="radio" name="answer" value="1" required> <?php echo $data['option1']; ?> 
     </label>
     <label>
-        <input type="radio" name="answer" value="<?php echo $data['option2']; ?>" required>
-        <?php echo $data['option2']; ?>
+        <input type="radio" name="answer" value="2" required> <?php echo $data['option2']; ?>
     </label>
     <label>
-        <input type="radio" name="answer" value="<?php echo $data['option3']; ?>" required>
-        <?php echo $data['option3']; ?>
+        <input type="radio" name="answer" value="3" required> <?php echo $data['option3']; ?>
     </label>
     <label>
-        <input type="radio" name="answer" value="<?php echo $data['option4']; ?>" required>
-        <?php echo $data['option4']; ?>
+        <input type="radio" name="answer" value="4" required> <?php echo $data['option4']; ?>
     </label>
     <?php //endforeach;?><br>
     <?php if ($current > 1): ?>
