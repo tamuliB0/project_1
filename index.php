@@ -1,11 +1,12 @@
 <?php
 session_start();
 $page_title = "Quiz app";
-// $page_header = "General Knowledge Quiz";
 include 'header.php';
 // require 'questions.php';
 require 'config.php';
 
+// unset($_SESSION['current_question']);
+// unset($_SESSION['answers']);
 
 $stmt = $pdo->query('SELECT COUNT(*) FROM questions');
 $total_question = $stmt->fetchColumn();

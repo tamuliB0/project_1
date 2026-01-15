@@ -25,15 +25,14 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
             $_SESSION['current_question']--;
             }
     } elseif ($_POST['action'] == 'next') {
-        echo "entered next condition<br>";
-        echo $_SESSION['current_question']."<br>";
-        if ($current < $total_question)
+        if ($current < $total_question) {
         $_SESSION['current_question']++;
-        echo $_SESSION['current_question'];
+        } else {
+            header('Location: results.php');
+            exit;
+        }    
+        }
     }
-    }
-    // header('Location: display-logic.php');
-    // exit;
 }
 
 $current = $_SESSION['current_question'];
